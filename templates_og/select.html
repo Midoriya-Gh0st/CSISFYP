@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+</head>
+<body>
+    <form action="{{url_upload}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg" />
+        <input type="submit" />
+    </form>
+    <form action="{{url_upload}}" method="POST"> <!-- how to specify the file extension by filename -->
+        <label>
+            <input type="text" name="file" accept=".jpg" />
+        </label>
+        <input type="submit" />
+    </form>
+</body>
+</html>
