@@ -1,6 +1,6 @@
 Flask==0.12.2
 gunicorn==18.0.0
 gTTs
-skimage
+scikit-image
 tensorflow
 joblib
