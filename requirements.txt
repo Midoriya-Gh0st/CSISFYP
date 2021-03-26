@@ -1,7 +1,6 @@
 Flask==0.12.2
 gunicorn==18.0.0
 gTTs
-os
 time
 shutil
 skimage
