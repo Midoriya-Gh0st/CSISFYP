@@ -125,7 +125,3 @@ def rewrite():
     print("[3] ------- conf. audio id: ", app.config['AUDIO_ID'])
     print("[4] ------- to where:", app.config['APP_SITE'] + 'evaluate/')
     return redirect(app.config['APP_SITE'] + 'evaluate/')  # go back to the evaluate result page again
-
-
-if __name__ == '__main__':
-    app.run()
