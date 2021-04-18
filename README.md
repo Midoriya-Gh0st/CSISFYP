@@ -1,22 +1,22 @@
 # FYP-Image-Captioning
 
 ## 1. Introduction
-This project is dedicated to providing people with visual impairments to understand the content of pictures in social media by voice.
+- This project is dedicated to providing people with visual impairments to understand the content of pictures in social media by voice.
 
-Through multi-modal machine learning, using CNN as the encoder, RNN (GRU) as the decoder, and gTTS as the speech converter, a picture-text-speech content conversion chain is formed.
+- Through multi-modal machine learning, using CNN as the encoder, RNN (GRU) as the decoder, and gTTS as the speech converter, a picture-text-speech content conversion chain is formed.
 
- At the same time, through transfer learning from the Google Interception-v3 model, a large number of image features are obtained, which improves the encoder's ability to a certain extent.
+- At the same time, through transfer learning from the Google Interception-v3 model, a large number of image features are obtained, which improves the encoder's ability to a certain extent.
 
-This project also uses the Attention mechanism, which allows the agent to find the main object in the picture.
+- This project also uses the Attention mechanism, which allows the agent to find the main object in the picture.
 
 
 
 ## 2. Client
-The client GUI of this project is built through the Python Flask framework, allowing MVC development.
+- The client GUI of this project is built through the Python Flask framework, allowing MVC development.
 
-The client is the exe program packaged by Pyinstaller. In order to facilitate the understanding of the project process, the background console display is enabled for this project, and the test output in the program can be verified in the background.
+- The client is the exe program packaged by Pyinstaller. In order to facilitate the understanding of the project process, the background console display is enabled for this project, and the test output in the program can be verified in the background.
 
-By loading the training model saved during the development process, the client can use it directly without training the model for a long time.
+- By loading the training model saved during the development process, the client can use it directly without training the model for a long time.
 
 
 
@@ -54,10 +54,13 @@ Step-02: Service using
 ## 4. Example Images' URL
 
 Example 01: `bike_man`
+
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example01_bike_man.jpg
 
 Example 02:  `giraffe_eating`
+
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example02_giraffe_eating.jpg
 
 Example 03: `umbrella_lady`
+
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example03_umbrella_lady.jpg
