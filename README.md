@@ -1,29 +1,63 @@
 # FYP-Image-Captioning
 
 ## 1. Introduction
-本项目致力于为有视觉障碍的人群提供以语音方式了解社交媒体中的图片内容. 通过多模态机器学习, 以CNN为encoder, RNN(GRU)为decoder, gTTS为语音转换器, 形成了图片-文字-语音的内容转换链. 同时, 通过从谷歌Interception-v3模型进行迁移学习, 获取了大量图片特征, 从而在一定程度上提升了encoder能力.  本项目同时使用了Attention机制, 这使得agent可以发现图片中处于主要地位的物体(即主体).
+This project is dedicated to providing people with visual impairments to understand the content of pictures in social media by voice.
+
+Through multi-modal machine learning, using CNN as the encoder, RNN (GRU) as the decoder, and gTTS as the speech converter, a picture-text-speech content conversion chain is formed.
+
+ At the same time, through transfer learning from the Google Interception-v3 model, a large number of image features are obtained, which improves the encoder's ability to a certain extent.
+
+This project also uses the Attention mechanism, which allows the agent to find the main object in the picture.
+
+
 
 ## 2. Client
-本项目的客户端GUI通过Python Flask框架构建, 允许MVC模式开发. 客户端为Pyinstaller打包的exe程序, 为了便于项目流程了解, 本次项目开启了后台展示, 程序中的测试性输出可以在后台中验证. 通过加载开发过程中保存的训练模型, 客户端无需对模型进行长时间的训练即可直接使用. 
+The client GUI of this project is built through the Python Flask framework, allowing MVC development.
+
+The client is the exe program packaged by Pyinstaller. In order to facilitate the understanding of the project process, the background console display is enabled for this project, and the test output in the program can be verified in the background.
+
+By loading the training model saved during the development process, the client can use it directly without training the model for a long time.
+
+
 
 ## 3. User's Guidance
-Step-01: 程序初始化
-1) 解压文件夹
-2) 点击iMagic.exe启动该程序
-3) 等待程序初始化 (加载相关库以及模型), 直到显示一个链接(通常是127.0.0.1:5000)
-4) 注意: 必须保证本地端口5000未被占用.
-5) 将地址粘贴在浏览器中, 即可跳转至程序主页面. 
+Step-01: Program initialization
+1) Unzip the folder
+2) Click iMagic.exe to start the program
+3) Wait for the program to initialize (load related libraries and models) until a link is displayed (usually 127.0.0.1:5000)
+4) Note: It must be ensured that the localhost port 5000 is not occupied.
+5) Paste the address in the browser to jump to the main page of the program.
 
-Step-02: 服务使用
-1) 在主页面点击开始, 进入图片上传页面
-2) 将.jpg格式的图片URL粘贴至文本框. 注意, 图片格式当前仅支持.jpg
-3) 你可以使用你的图片链接, 也使用下一部分的样本链接.
-4) 点击上传, 程序将跳转至结果页面. 您可能需要等待一会, 因为图片资源需要从URL下载至本地并解析为tensor格式.
-5) 图片以及预测的字幕将会展示. 
-6) 语音将会自动播放, <u>**注意: 如果您佩戴耳机, 请务必控制音量**</u> 
-7) 点击Try Again, 可以重新对当前图片进行预测.
-8) 点击Select New, 可以返回主页重新上传图片.
-9) 您可以查看后台输出, 后台记录了程序的操作流程.
+Step-02: Service using
+1) Click `Start Now` on the main page (http://127.0.0.1:5000/) to enter the image upload page (http://127.0.0.1:5000/select/).
+
+<div><img src="https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/images/ui/index_page.PNG"  width="400" height="200" alt="index page"> </div>
+
+2) Paste the URL of the picture in .jpg format into the text box. Note that the picture format currently only supports .jpg
+3) You can use your image link, as well as the example links listed in the section 4 (Example Images' URL).
+
+<div><img src="https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/images/ui/file_upload.PNG"  width="400" height="200" alt="index page"> </div>
+
+4) Click `Submit`, the program will jump to the result page (http://127.0.0.1:5000/evaluate/). You may need to wait a while, because the image resource needs to be downloaded from the URL to the local and parsed into tensor format.
+5) Pictures and predicted captions should now be displayed.
+
+<div><img src="https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/images/ui/result_page.PNG"  width="400" height="200" alt="index page"> </div>
+
+6) The voice will be played automatically, <u>**Note: If you wear headphones, please be sure to control the volume**</u>
+7) Click `Try Again`, you can re-predict the current picture.
+8) Click `Select New`, you can return to the homepage and upload the picture again.
+9) You can view the background output which records the operation process of the program.
 
 
-## Example Images' URL
+
+
+## 4. Example Images' URL
+
+Example 01: `bike_man`
+https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example01_bike_man.jpg
+
+Example 02:  `giraffe_eating`
+https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example02_giraffe_eating.jpg
+
+Example 03: umbrella_lady
+https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example03_umbrella_lady.jpg
