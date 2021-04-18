@@ -24,7 +24,9 @@
 Step-01: Program initialization
 1) Unzip the folder
 2) Click iMagic.exe to start the program
-3) Wait for the program to initialize (load related libraries and models) until a link is displayed (usually 127.0.0.1:5000)
+3) Wait for the program to initialize (load related libraries and models, it's about 1 minute) until a link is displayed (usually 127.0.0.1:5000)
+<div><img src="https://github.com/Midoriya-Gh0st/CSISFYP/raw/master/static/images/ui/init.PNG"  width="400" height="200" alt="index page"> </div>
+
 4) Note: It must be ensured that the localhost port 5000 is not occupied.
 5) Paste the address in the browser to jump to the main page of the program.
 
