@@ -59,5 +59,5 @@ https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/
 Example 02:  `giraffe_eating`
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example02_giraffe_eating.jpg
 
-Example 03: umbrella_lady
+Example 03: `umbrella_lady`
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example03_umbrella_lady.jpg
