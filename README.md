@@ -68,6 +68,6 @@ Example 03: `umbrella_lady`
 https://raw.githubusercontent.com/Midoriya-Gh0st/CSISFYP/master/static/examples/example03_umbrella_lady.jpg
 
 ## 5. Development Package
-- In the code package you can find the "development_using" package, which is used for AI dvelopment and networks training. 
-- The model_weights in the client package is the production from AI. 
+- In the code package you can find the `AI_development_using` package, which is used for AI dvelopment and networks training. 
+- The `model_weights` in the client package is the production from AI. 
 - I used Google CoLab to run the AI, you could also upload the .ipynb files to the CoLab and then have a try.
