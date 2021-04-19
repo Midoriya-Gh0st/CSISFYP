@@ -22,7 +22,7 @@
 
 ## 3. User's Guidance
 Step-01: Program initialization
-1) Unzip the folder
+1) Unzip the folder (Note: the .exe file size is too large so I cannot upload it to GitHub, please just find whole FYP zip file with iMagic.exe in OneDrive).
 2) Click iMagic.exe to start the program
 3) Wait for the program to initialize (load related libraries and models, it's about 1 minute) until a link is displayed (usually 127.0.0.1:5000)
 <div><img src="https://github.com/Midoriya-Gh0st/CSISFYP/raw/master/static/images/ui/init.PNG"  width="400" height="200" alt="index page"> </div>
